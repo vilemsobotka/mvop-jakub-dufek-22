@@ -13,7 +13,7 @@ function App() {
     <Header headline="text"
       text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsa maiores voluptatibus optio et nesciunt facilis obcaecati. Accusamus quibusdam dolorum repudiandae unde veritatis iusto, earum quidem repellat, dolor inventore nesciunt."
       button="tlačítko2" />
-    <div class="mt-8 flex">
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
       <Part1 />
       <Part1 />
       <Part1 />
