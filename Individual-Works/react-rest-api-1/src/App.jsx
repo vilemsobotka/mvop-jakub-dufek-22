@@ -13,7 +13,7 @@ function App() {
      await axios.get("https://api.golemio.cz/v2/gtfs/routes?limit=30")
       .then((response) => {
         setRoute(response.data);
-        console.log(response);
+        //console.log(response);
       });
   }
   useEffect(() => {
