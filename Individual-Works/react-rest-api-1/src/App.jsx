@@ -18,7 +18,7 @@ function App() {
   }
   useEffect(() => {
     getRoad();
-  },)
+  },[])
   return (
     <div>
       {route ? (<Grid route={route}></Grid>) : <div>loading...</div>}
