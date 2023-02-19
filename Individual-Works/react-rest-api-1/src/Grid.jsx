@@ -1,15 +1,17 @@
 function Grid(props) {
     return (
         <div>
-            {props.route.map((road) => {
-                return (
-                        <tr key={road.road_short_name}>
-                            <th><p>Long name: {road.route_long_name}</p></th>
-                            <th><p>Short name: {road.route_short_name}</p></th>
-                            <th><a href={road.route_link}>Route link</a></th>
-                        </tr>
+            {props.route.map((road) => 
+            
+                        <div key={road.route_short_name} className={"grid grid-cols-3"} 
+                        style={{ backgroundColor: `#${road.route_color}`
+                        }}>
+                            <div>Long name: {road.route_long_name}</div>
+                            <div>Short name: {road.route_short_name}</div>
+                            <a href={road.route_link} target="_blank">Route link</a>
+                        </div>
                 )
-            })}
+            }
         </div>
     )
 
