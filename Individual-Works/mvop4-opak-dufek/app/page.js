@@ -6,19 +6,24 @@ export default async function home() {
   return (
     <div>
       <h1>home</h1>
-      <div>{users.map((user,index)=>{
-        const {title} = user
-        return (
-          <div>
-            <Link href={'/detail/' + index}>{title}</Link>
-          </div>
-        )
-      })}</div>
+      <div>
+        {users.map((user,) => {
+          const { title } = user
+          return (
+            <div>
+              <Link
+                href={{
+                  pathname: 'detail',
+                  query: {id : user.id}
+                }}
+              >{title}</Link>
+            </div>
+          )
+        })}
+      </div>
     </div>
   )
 }
 
-export async function getData() {
- 
-}
+
 
