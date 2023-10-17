@@ -4,11 +4,7 @@ export default async function handleClick(id: string) {
     const getIp = await fetch(url)
     const ip: IP = await getIp.json()
     console.log(ip)
-    return (
-        <div>
-            <p>loading</p>
-        </div>
-    )
+
 }
 interface IP {
     asn: string
